@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+<div class="pageContainerExternal">
+  <ul class="pageContainerInternal divide divide-y" id="js-pageWrapper">
+  </ul>
+</div>
+
+<div class="paginationContainerExternal ">
+  <div class="paginationContainerInternal " id="js-paginationWrapper"></div>
+</div>
+
+  <div class="dataBtnsContainer">
+    <button class="smallDataBtn" id="js-setSmallData">Choose a small data set</button> 
+    <button class="largeDataBtn" id="js-setLargeData">Choose a large data set</button> 
+  </div>
+
+  <script src="dataSets.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

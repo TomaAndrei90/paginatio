@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pageContainerExternal {
+  @apply my-5  flex flex-col mx-auto w-auto items-center bg-white  rounded-lg shadow;
+  width: min-content;
+  height: 17rem;
+}
+
+.pageContainerInternal {
+  @apply flex flex-col;
+  width: 15rem;
+}
+
+.paginationContainerExternal {
+  @apply bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6;
+}
+
+.paginationContainerInternal {
+  @apply flex-1 flex justify-center;
+}
+
+.pageItem {
+  @apply flex flex-col p-1 pl-3;
+}
+
+.pageItem__name {
+  @apply font-medium;
+}
+
+.pageItem__rank {
+  @apply text-gray-600 text-sm;
+}
+
+.pageButton {
+  @apply relative inline-flex items-center px-4 py-2 border border-gray-300 rounded-none text-sm font-medium text-gray-700 bg-white hover:bg-gray-50;
+}
+
+.pageButton--active {
+  @apply bg-indigo-50 border-indigo-500 text-indigo-600;
+}
+
+.pageButtonFirst {
+  @apply rounded-l;
+}
+
+.pageButtonLast {
+  @apply rounded-r;
+}
+
+.dataBtnsContainer {
+  @apply flex gap-2 max-w-md mx-auto;
+}
+
+.smallDataBtn,
+.largeDataBtn {
+  @apply py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg;
+}
